@@ -73,8 +73,13 @@ FPN小结：
 RetinaNet小结：
 
 1. 为了解决样本不平衡的问题，提出了Focal loss，使得数量多的样本对模型有更小的影响，模型更关注数量少的样本
-2. 使用Resnet+FPN+2个FCP子网络，输出W*H*
+2. 使用Resnet+FPN+2个FCP子网络，一个负责分类，输出W*H*KA，；另一个负责边框回归，输出W*H*4A
+    其中K为类别数目，A为anchor个数，文中A=9
 
+
+Mask R-CNN小结：
+
+1. 
 
 
 
