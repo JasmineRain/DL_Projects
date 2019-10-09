@@ -76,9 +76,12 @@ RetinaNet小结：
 2. 使用Resnet+FPN+2个FCP子网络，输出W*H*
 
 
+Mask R-CNN小结：
+
+1. 
 
 
 
 
-
+综述概括点： 年份、会议、名称、论文地址、stage、亮点、输入、输出、损失函数、anchor box
 
