@@ -90,7 +90,7 @@ YOLO v3小结：
 Mask R-CNN小结：
 
 1. 保持了two-stage结构，只是另外加入了FCN来产生Mask分支（不同于其他实例分割的先分割后分类）
-2. 提出RoIAlign取代RoIPooling，双线性插值法避免了后者中两次引入的量化误差值（图像坐标->feature map坐标；feature map坐标->RoI feature坐标）
+2. 提出RoIAlign取代RoIPooling，双线性插值法避免了后者中两次引入的量化误差值（图像坐标->feature map坐标；feature map坐标->RoI feature坐标因不整除均产生误差）
 3. 损失函数由3个分支组成：其中分类误差和边框回归误差同Faster R-CNN，对于Mask分支，输出为K*m*m（每个RoI），表示K个（K类）m*m的binary mask
     注意Mask损失只计算K个mask中 与GT的类别相同的那个mask，依赖分类分支的预测来选择相应mask（不同于FCN，FCN各个mask之间存在竞争关系）
 
@@ -112,5 +112,5 @@ M2Det小结：
 
 
 
-综述概括点： 年份、会议、名称、论文地址、stage、亮点、输入、输出、损失函数、anchor box
+综述概括点： 年份、会议、名称、论文地址、stage、亮点、输入、输出、特有网络结构、损失函数、anchor box
 
