@@ -33,7 +33,7 @@
 * 使用特征向量对每个类都训练一个SVM，GT对应的特征向量为正样本，与GT的IoU<0.3的为负样本，其余丢弃，最后使用非极大抑制确定分类
 * 作者还训练了一个线性的边框回归模型
    
-## Fast R-CNN
+## Fast%20R-CNN
 * Two-stage，依旧使用了Selective search的方法获取候选区域，但是实现了参数共享，直接在feature map上找到各候选区域对应位置
 * 提出了RoI Pooling layer（用于替代VGG第5层的普通池化层），直接将feature map均分为M*N块，得到固定大小的特征向量
    
